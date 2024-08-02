@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media quries</title>
+    <style>
+        .body{
+            background-color: #f5f7fb;
+        }
+
+        .card{
+        width: 400px;
+        background-color: #fff;
+        border: 1px solid tomato;
+        box-shadow: 0 0 10px 5px (rgba(red, green, blue, alpha));
+        border-radius: 5px;
+        padding: 5px;
+        }
+        .card-header-section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .card-img{
+            height: 32px;
+            box-shadow: 0 0 5px 1px (rgba(red, green, blue, alpha));
+            padding: 5px;
+            border-radius: 10px;
+             }
+
+             .card-heading{
+                font-size: 23px;
+                margin-left: 5px ;
+             }
+
+             .class-decription{
+                font-size: 15px;
+                padding: 10px 20px;
+                margin:0;
+             }
+
+        .cards-container{
+            display:flex;
+        justify-content:column-reverse;
+        flex-wrap:wrap;
+            }
+/*small devices */
+@media screen and (max-width: 600px){
+    .card{
+        background-color: #f5f7fb;
+        width:1px;
+        margin:1px 5px;
+    } }
+    
+    /* normal screen */
+    @media screen and (min-width:601px)and (max-width:768px){
+    .card{
+        background-color: #f5f7fb;
+        width:1px;
+        margin:1px 5px;
+   }}
+     
+
+ /* tablet devices  */
+ @media screen and (min-width: 769px)and (max-width:992px){
+    .card{
+    width:10px;
+    margin:10px 20px;
+    }
+    } 
+    
+
+    /* large devices  */
+ @media screen and (min-width: 993px) and (max-width:1200px){
+     .card{   
+    width:10px;
+    margin:10px 20px;
+     }}
+
+    /* very large devices*/
+    @media screen and (min-width: 1201px) {
+    .btn{
+        background-color:purple;
+        justify-content: start;
+    } }
+.card-img{
+    margin-left: 120px;
+    margin-top: 50px;
+}
+    </style>
+</head>
+<body>
+    <div class="cards-container">
+        <div class="card">
+<div class="card-header-section">
+    <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flive-classes-md.png&w=64&q=75"
+    class="card-img"/> 
+    <h1 class ="card-heading">Live Interactive Classes</h1>
+    </div>
+    <p class="class-decription">
+        Attend live class and get your doubts cleared by the instructor in real-time just like a physical classroom. No boring pre-recorded videos.
+    </p>
+    </div>
+   </div>  
+   <div class="card">
+    <div class="card-header-section">
+        <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Fdoubt-resolution-md.png&w=64&q=75"
+        class="card-img"/> 
+        <h1 class ="card-heading">Quick Doubt Resolutions</h1>
+        </div><br/>
+        <p class="class-decription">
+            Get your doubts resolved quickly. No more waiting for the next class. Once you ask a doubt our teaching assistants will resolve it as soon as possible.
+        </div>
+       </div>  
+       <div class="card">
+        <div class="card-header-section">
+            <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flifetime-free-notes-md.png&w=64&q=75"
+            class="card-img"/> 
+            <h1 class ="card-heading">Lifetime Free Notes</h1>
+            </div>
+            <p class="class-decription">
+                Get lifetime access of the notes that you can refer anytime in the future. High-quality notes prepared by the instructor. No need to buy any books.
+                </p>
+            </div>
+           </div>  
+</div>    
+</button>
+</body>
+</html>
